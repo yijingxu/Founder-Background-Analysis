@@ -49,6 +49,7 @@ def is_founder(title):
 
 df['is_founder'] = df['title'].apply(is_founder)
 df_founder = df[df['is_founder']].sort_values(by=['member_id', 'year_from']).drop_duplicates(subset='member_id').reset_index()
+df_founder = df_founder[['member_id','company_id','year_from','title', 'company_name']]
 
 # Save processed data to CSV
 file_name = 'Founder.csv'
