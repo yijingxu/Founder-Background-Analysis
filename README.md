@@ -8,7 +8,7 @@ The Markdown documents are copied and pasted here:
 **Implementation:** 
 - Example inputs from date_from and date_to columns:'March 2018', 'January 2017', 'July 2015', '1997','Ekim 2011', 'Aralık 2009', 'Mayıs 2009', 'Eylül 2007', 'October 1977', 'junio de 2005'
 - The common element across all date formats in the dataset is the **year**, consistently represented in numeric form.
-- Extracting only the year simplifies the dataset, allowing for maximized data retention by avoiding the exclusion of rows due to incomplete or non-standard date information.
+- Extracting only the year simplifies the dataset, function: `extract_year` allowing for maximized data retention by avoiding the exclusion of rows due to incomplete or non-standard date information.
 - The function is applied to both `date_from` and `date_to` columns, creating new columns `year_from` and `year_to` in the DataFrame.
 
 **Another Way:**
